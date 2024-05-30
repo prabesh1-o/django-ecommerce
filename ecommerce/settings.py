@@ -20,7 +20,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'ecommerce.apps.SuitConfig',
+    # 'ecommerce.apps.SuitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'crispy_bootstrap4',
     'django.contrib.humanize',
      'shop',
     'cart',
@@ -139,7 +140,9 @@ EMAIL_HOST_PASSWORD = 'Dinesh@2054'
 
 
 SUIT_CONFIG = {
-    'ADMIN_NAME': 'prinish'
+    'ADMIN_NAME': 'admin'
 }
 
 IMPORT_EXPORT_USE_TRANSACTIONS = True
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
